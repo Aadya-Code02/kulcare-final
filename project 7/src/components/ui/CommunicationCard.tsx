@@ -48,7 +48,9 @@ export default function CommunicationCard() {
       color: "hsl(var(--chart-5))",
     },
   } satisfies ChartConfig;
-<div className="space-y-10 flex flex-wrap">
+  return (
+    <>
+ <div className="space-y-10 flex flex-wrap">
       <h2 className="text-left font-bold w-full">Communications</h2>
       <div className="flex gap-4 flex-wrap">
         {/* First Card */}
@@ -129,4 +131,6 @@ export default function CommunicationCard() {
         </Card>
       </div>
     </div>
+    </>
+  );
 }
