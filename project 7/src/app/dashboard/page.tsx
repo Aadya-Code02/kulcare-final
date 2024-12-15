@@ -15,7 +15,7 @@ export default function Page() {
 
   return (
     <SidebarProvider>
-      <header className="fixed top-0 border-2 shadow-md border-gray-200 left-0 right-0 z-10 flex h-[100px] items-center justify-between bg-background text-foreground">
+      <header className="fixed top-0 border-2 shadow-md  left-0 right-0 z-10 flex h-[100px] items-center justify-between bg-background text-foreground">
         <h2 className="px-4"> KULCARE</h2>
         <div className="flex items-center gap-2 px-4">
           <SidebarTrigger className="-ml-1" />
@@ -27,9 +27,9 @@ export default function Page() {
         </div>
       </header>
 
-      <AppSidebar  className="fixed top-[100px] left-0 h-[calc(100vh-100px) bg-gray-100 border-t-2 border-gray-200 transition-all duration-300" />
+      <AppSidebar  className="fixed top-[100px]  left-0 h-[calc(100vh-100px)  border-t-2  transition-all duration-300" />
 
-      <SidebarInset className="mt-[100px] shadow-md    border-gray-200 border-r-2  mr-20 bg-background text-foreground">
+      <SidebarInset className="mt-[100px] shadow-md     border-r-2  mr-20 bg-background text-foreground">
         <main>
           <Outlet />
         </main>

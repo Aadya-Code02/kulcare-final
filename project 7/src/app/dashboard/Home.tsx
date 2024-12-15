@@ -70,7 +70,6 @@ import {
     return (
       <>
         <div className="space-y-10 m-10 ">
-          <h2 className="text-left font-bold">Communications</h2>
           <div className="flex gap-4 flex-wrap">
           <div className="flex flex-wrap"><CommunicationCard /></div>
 
