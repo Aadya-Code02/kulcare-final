@@ -35,7 +35,6 @@ export function NavMain({
 }) {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Platform</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
           <Collapsible
@@ -44,7 +43,7 @@ export function NavMain({
             defaultOpen={item.isActive}
             className="group/collapsible"
           >
-            <SidebarMenuItem>
+            <SidebarMenuItem className="" >
                 <Link to={item.url}>
                     <SidebarMenuButton tooltip={item.title}>
                     {item.icon && <item.icon />}

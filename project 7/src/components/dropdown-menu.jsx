@@ -12,8 +12,17 @@ import {
 
 import { Bolt, BookOpen, ChevronDown, Layers2, LogOut, Pin, UserPen } from "lucide-react";
 import {ModeToggle} from "../components/mode-toggle"
+import { useNavigate } from 'react-router-dom';
+
 
 export default function DropdownDemo() {
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    // Perform any logout logic here (e.g., clearing tokens, state)
+    
+    // Redirect to the desired route (e.g., login page or home page)
+    navigate('/errorpage');
+  };
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -59,10 +68,11 @@ export default function DropdownDemo() {
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>
+        <DropdownMenuItem >
           <LogOut size={16} strokeWidth={2} className="opacity-60" aria-hidden="true" />
-          <span>Logout</span>
-        </DropdownMenuItem>
+          <span onClick={handleLogout} className="cursor-pointer text-blue-500 hover:underline">
+      Logout
+    </span>        </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           <span><ModeToggle /></span>
