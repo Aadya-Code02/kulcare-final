@@ -17,7 +17,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-import { DatePickerWithPresets } from "@/components/ui/DatePickerWithRange";
 
 export default function Communications() {
   const dropdownItems = [
@@ -174,7 +173,6 @@ export default function Communications() {
     <>
       <div className="space-y-10 m-10">
         <h2 className="text-left font-bold">List of Communications</h2>
-        <DatePickerWithPresets />
         <div className="flex space-x-[130px]">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -237,6 +235,7 @@ export default function Communications() {
         </div>
 
         <div>
+          
           <CommunicationCard />
 
           <div className="mt-14">

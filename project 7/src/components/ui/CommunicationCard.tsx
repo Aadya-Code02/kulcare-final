@@ -13,6 +13,8 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
+import { DatePickerWithPresets } from "@/components/ui/DatePickerWithRange";
+
 
 export default function CommunicationCard() {
   const chartData = [
@@ -52,9 +54,11 @@ export default function CommunicationCard() {
     <>
       <div className="space-y-10">
         <h2 className="text-left font-bold">Communications</h2>
+        <DatePickerWithPresets />
+
         <div className="flex gap-4">
           {/* First Card */}
-          <Card className="w-[665px] h-[236px] mx-[10px]">
+          <Card className="w-[400px] h-[236px] mx-[10px]">
             <CardHeader>
               <CardTitle className="text-left">Reach</CardTitle>
               <CardDescription>January - June 2024</CardDescription>
@@ -92,7 +96,7 @@ export default function CommunicationCard() {
             </CardContent>
           </Card>
 
-          <Card className="w-[665px] h-[236px] mx-[10px]">
+          <Card className="w-[400px] h-[236px] mx-[10px]">
             <CardHeader>
               <CardTitle className="text-left">Engagement</CardTitle>
             </CardHeader>
