@@ -96,7 +96,7 @@ export default function MarketInsights() {
   ];
   const dropdownItems3 = [
     {
-      title: "8X Cream",
+      title: "Cream",
       icon: (
         <Bolt
           size={16}
@@ -107,7 +107,7 @@ export default function MarketInsights() {
       ),
     },
     {
-      title: "8X Shampoo",
+      title: "Shampo",
       icon: (
         <Layers2
           size={16}
@@ -129,7 +129,7 @@ export default function MarketInsights() {
       ),
     },
     {
-      title: "Acivir Cream",
+      title: "Acivir",
       icon: (
         <Files
           size={16}
@@ -142,10 +142,10 @@ export default function MarketInsights() {
   ];
   const dropdownItems4 = [
     {
-      title: "Lakshay Sharma",
+      title: "Lakshay",
     },
     {
-      title: "Aadya Sharma",
+      title: "Aadya",
     },
     {
       title: "Sharma Ji",
@@ -428,8 +428,15 @@ export default function MarketInsights() {
     <div className="flex-1 min-w-[300px]">
       <Card className="flex-1 h-full">
         <CardHeader>
-          <CardTitle className="text-left font-light">RXERS</CardTitle>
+          <CardTitle className="text-left font-light">FORECAST</CardTitle>
           <CardDescription className="size-10 text-[50px]">11,760</CardDescription>
+        </CardHeader>
+        <CardContent className="text-purple-500">
+          <p>100%</p>
+        </CardContent>
+        <CardHeader>
+          <CardTitle className="text-left font-light">RXERS</CardTitle>
+          <CardDescription className="size-10 text-[50px]">38L</CardDescription>
         </CardHeader>
         <CardContent className="text-purple-500">
           <p>100%</p>

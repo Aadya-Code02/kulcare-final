@@ -69,7 +69,7 @@ export default function Communications() {
 
   const dropdownItems2 = [
     {
-      title: "8X Cream",
+      title: "Cream",
       icon: (
         <Bolt
           size={16}
@@ -80,7 +80,7 @@ export default function Communications() {
       ),
     },
     {
-      title: "8X Shampoo",
+      title: "Shampo",
       icon: (
         <Layers2
           size={16}
@@ -102,7 +102,7 @@ export default function Communications() {
       ),
     },
     {
-      title: "Acivir Cream",
+      title: "Acivir",
       icon: (
         <Files
           size={16}
