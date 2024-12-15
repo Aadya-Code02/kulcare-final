@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Page from "../app/dashboard/page";
 import HomePage from "../app/dashboard/Home";
+import Communications from "@/app/dashboard/Communication";
 
 const AppRoutes = () => {
   return (
@@ -10,6 +11,8 @@ const AppRoutes = () => {
         {/* Render HomePage as default for "/" path */}
         <Route index element={<HomePage />} />
         <Route path="dashboard" element={<HomePage />} />
+        <Route path="communications" element={<Communications />} />
+
       </Route>
     </Routes>
   );
