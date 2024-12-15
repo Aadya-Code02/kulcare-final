@@ -4,7 +4,9 @@ import AppRoutes from "./routes/app-routes";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <AppRoutes />
+<div >
+  <AppRoutes />
+</div>     
     </ThemeProvider>
   );
 }

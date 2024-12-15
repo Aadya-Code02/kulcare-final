@@ -48,88 +48,85 @@ export default function CommunicationCard() {
       color: "hsl(var(--chart-5))",
     },
   } satisfies ChartConfig;
-  return (
-    <>
-      <div className="space-y-10">
-        <h2 className="text-left font-bold">Communications</h2>
-        <div className="flex gap-4">
-          {/* First Card */}
-          <Card className="w-[665px] h-[236px] mx-[10px]">
-            <CardHeader>
-              <CardTitle className="text-left">Reach</CardTitle>
-              <CardDescription>January - June 2024</CardDescription>
-            </CardHeader>
-            <CardContent className="flex justify-center items-center h-[150px]">
-              <ChartContainer config={chartConfig} className="w-full h-full">
-                <BarChart
-                  accessibilityLayer
-                  data={chartData}
-                  layout="vertical"
-                  width={600} // Adjust based on available space
-                  height={150} // Adjust based on available space
-                  margin={{
-                    left: 0,
-                  }}
-                >
-                  <YAxis
-                    dataKey="browser"
-                    type="category"
-                    tickLine={false}
-                    tickMargin={10}
-                    axisLine={false}
-                    tickFormatter={(value) =>
-                      chartConfig[value as keyof typeof chartConfig]?.label
-                    }
-                  />
-                  <XAxis dataKey="visitors" type="number" hide />
-                  <ChartTooltip
-                    cursor={false}
-                    content={<ChartTooltipContent hideLabel />}
-                  />
-                  <Bar dataKey="visitors" layout="vertical" radius={5} />
-                </BarChart>
-              </ChartContainer>
-            </CardContent>
-          </Card>
+<div className="space-y-10 flex flex-wrap">
+      <h2 className="text-left font-bold w-full">Communications</h2>
+      <div className="flex gap-4 flex-wrap">
+        {/* First Card */}
+        <Card className="flex-1 min-w-[300px]">
+          <CardHeader>
+            <CardTitle className="text-left">Reach</CardTitle>
+            <CardDescription>January - June 2024</CardDescription>
+          </CardHeader>
+          <CardContent className="flex justify-center items-center h-[150px]">
+            <ChartContainer config={chartConfig} className="w-full h-full">
+              <BarChart
+                accessibilityLayer
+                data={chartData}
+                layout="vertical"
+                width="100%" // Adjust based on available space
+                height={150} // Adjust based on available space
+                margin={{
+                  left: 0,
+                }}
+              >
+                <YAxis
+                  dataKey="browser"
+                  type="category"
+                  tickLine={false}
+                  tickMargin={10}
+                  axisLine={false}
+                  tickFormatter={(value) =>
+                    chartConfig[value as keyof typeof chartConfig]?.label
+                  }
+                />
+                <XAxis dataKey="visitors" type="number" hide />
+                <ChartTooltip
+                  cursor={false}
+                  content={<ChartTooltipContent hideLabel />}
+                />
+                <Bar dataKey="visitors" layout="vertical" radius={5} />
+              </BarChart>
+            </ChartContainer>
+          </CardContent>
+        </Card>
 
-          <Card className="w-[665px] h-[236px] mx-[10px]">
-            <CardHeader>
-              <CardTitle className="text-left">Engagement</CardTitle>
-            </CardHeader>
-            <CardContent className="flex justify-center items-center h-[150px]">
-              <ChartContainer config={chartConfig} className="w-full h-full">
-                <BarChart
-                  accessibilityLayer
-                  data={chartData}
-                  layout="vertical"
-                  width={600} // Adjust based on available space
-                  height={150} // Adjust based on available space
-                  margin={{
-                    left: 0,
-                  }}
-                >
-                  <YAxis
-                    dataKey="browser"
-                    type="category"
-                    tickLine={false}
-                    tickMargin={10}
-                    axisLine={false}
-                    tickFormatter={(value) =>
-                      chartConfig[value as keyof typeof chartConfig]?.label
-                    }
-                  />
-                  <XAxis dataKey="visitors" type="number" hide />
-                  <ChartTooltip
-                    cursor={false}
-                    content={<ChartTooltipContent hideLabel />}
-                  />
-                  <Bar dataKey="visitors" layout="vertical" radius={5} />
-                </BarChart>
-              </ChartContainer>
-            </CardContent>
-          </Card>
-        </div>
+        {/* Second Card */}
+        <Card className="flex-1 min-w-[300px]">
+          <CardHeader>
+            <CardTitle className="text-left">Engagement</CardTitle>
+          </CardHeader>
+          <CardContent className="flex justify-center items-center h-[150px]">
+            <ChartContainer config={chartConfig} className="w-full h-full">
+              <BarChart
+                accessibilityLayer
+                data={chartData}
+                layout="vertical"
+                width="100%" // Adjust based on available space
+                height={150} // Adjust based on available space
+                margin={{
+                  left: 0,
+                }}
+              >
+                <YAxis
+                  dataKey="browser"
+                  type="category"
+                  tickLine={false}
+                  tickMargin={10}
+                  axisLine={false}
+                  tickFormatter={(value) =>
+                    chartConfig[value as keyof typeof chartConfig]?.label
+                  }
+                />
+                <XAxis dataKey="visitors" type="number" hide />
+                <ChartTooltip
+                  cursor={false}
+                  content={<ChartTooltipContent hideLabel />}
+                />
+                <Bar dataKey="visitors" layout="vertical" radius={5} />
+              </BarChart>
+            </ChartContainer>
+          </CardContent>
+        </Card>
       </div>
-    </>
-  );
+    </div>
 }

@@ -15,6 +15,7 @@ import {
   } from "@/components/ui/chart";
 
   import { useMemo } from "react";
+  import CommunicationCard from "@/components/ui/CommunicationCard";
   
   export default function Dashboardd() {
     const chartData = [
@@ -71,52 +72,8 @@ import {
         <div className="space-y-10 m-10 ">
           <h2 className="text-left font-bold">Communications</h2>
           <div className="flex gap-4 flex-wrap">
-            <Card className="w-[400px] h-[236px]">
-              <CardHeader>
-                <CardTitle className="text-left">Reach</CardTitle>
-                <CardDescription>January - June 2024</CardDescription>
-              </CardHeader>
-              <CardContent className="flex justify-center items-center h-[150px]">
-                <ChartContainer config={chartConfig} className="w-full h-full">
-                  <BarChart
-                    accessibilityLayer
-                    data={chartData}
-                    layout="vertical"
-                    width={600} // Adjust based on available space
-                    height={150} // Adjust based on available space
-                    margin={{
-                      left: 0,
-                    }}
-                  >
-                    <YAxis
-                      dataKey="browser"
-                      type="category"
-                      tickLine={false}
-                      tickMargin={10}
-                      axisLine={false}
-                      tickFormatter={(value) =>
-                        chartConfig[value as keyof typeof chartConfig]?.label
-                      }
-                    />
-                    <XAxis dataKey="visitors" type="number" hide />
-                    <ChartTooltip
-                      cursor={false}
-                      content={<ChartTooltipContent hideLabel />}
-                    />
-                    <Bar dataKey="visitors" layout="vertical" radius={5} />
-                  </BarChart>
-                </ChartContainer>
-              </CardContent>
-            </Card>
-  
-            <Card className="w-[400px] h-[236px]">
-              <CardHeader>
-                <CardTitle className="text-left">Engagement</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Card Content</p>
-              </CardContent>
-            </Card>
+          <div className="flex flex-wrap"><CommunicationCard /></div>
+
           </div>
           <h2 className="text-left font-bold py-4">Doctors</h2>
           <div className="flex flex-wrap gap-9">
