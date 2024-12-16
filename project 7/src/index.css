@@ -86,8 +86,8 @@
 
 @layer base {
   :root {
-    --main-background-light: hsl(203, 31%, 95%); /* light blue-gray for light mode */
-    --main-background-dark: hsl(213, 22%, 22%); /* blue with less intensity for dark mode */
+    --main-background-light: hsl(203, 31%, 95%); 
+    --main-background-dark: hsl(213, 22%, 22%); 
   }
 
   .mainbackground {
