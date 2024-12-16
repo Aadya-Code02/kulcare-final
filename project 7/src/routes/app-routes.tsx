@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Page from "../app/dashboard/page";
+import Page from "../app/dashboard/Page";
 import HomePage from "../app/dashboard/Home";
 import Communications from "@/app/dashboard/Communication";
 import Error404 from "@/app/dashboard/Errorpages/error1";

@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // React Router for navigation
 import { Button } from "@/components/ui/button"; // Update to match your Button component import

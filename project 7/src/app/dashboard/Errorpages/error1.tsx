@@ -1,4 +1,3 @@
-"use client";
 
 import { useState } from "react";
 import { Link } from "react-router-dom"; // Use this if you're using React Router
