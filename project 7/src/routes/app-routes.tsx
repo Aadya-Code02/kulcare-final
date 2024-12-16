@@ -5,6 +5,7 @@ import Communications from "@/app/dashboard/Communication";
 import Error404 from "@/app/dashboard/Errorpages/error1";
 import LoginPage from "@/app/dashboard/pages/Login";
 import MarketInsights from "@/app/dashboard/MarketInsights";
+import Error2 from "@/app/dashboard/Errorpages/error2";
 
 const AppRoutes = () => {
   return (
@@ -16,6 +17,8 @@ const AppRoutes = () => {
         <Route path="errorpage" element={<Error404 />} />
         <Route path="teams" element={<LoginPage />} />
         <Route path="market-insights" element={<MarketInsights />} />
+        <Route path="error" element={<Error2 />} />
+
 
 
 

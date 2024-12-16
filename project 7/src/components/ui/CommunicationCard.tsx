@@ -54,7 +54,7 @@ export default function CommunicationCard() {
       <h2 className="text-left font-bold w-full">Communications</h2>
       <div className="flex gap-4 flex-wrap">
         {/* First Card */}
-        <Card className="flex-1 min-w-[300px]">
+        <Card className="flex-1 min-w-[400px]">
           <CardHeader>
             <CardTitle className="text-left">Reach</CardTitle>
             <CardDescription>January - June 2024</CardDescription>
@@ -93,7 +93,7 @@ export default function CommunicationCard() {
         </Card>
 
         {/* Second Card */}
-        <Card className="flex-1 min-w-[300px]">
+        <Card className="flex-1 min-w-[400px]">
           <CardHeader>
             <CardTitle className="text-left">Engagement</CardTitle>
           </CardHeader>

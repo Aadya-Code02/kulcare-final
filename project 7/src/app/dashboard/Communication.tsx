@@ -17,8 +17,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-
-
 export default function Communications() {
   const dropdownItems = [
     {
@@ -172,9 +170,9 @@ export default function Communications() {
 
   return (
     <>
-      <div className="space-y-10 m-10">
+      <div className="space-y-10 m-10 ">
         <h2 className="text-left font-bold">List of Communications</h2>
-        <div className="flex space-x-[130px]">
+        <div className="flex flex-wrap space-x-[130px]">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
@@ -235,11 +233,10 @@ export default function Communications() {
           </DropdownMenu>
         </div>
 
-        <div>
-          
+        <div className="">
           <CommunicationCard />
 
-          <div className="mt-14">
+          <div className="mt-14 flex">
             <Table>
               <TableHeader>
                 <TableRow>

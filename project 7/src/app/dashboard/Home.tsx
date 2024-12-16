@@ -71,7 +71,7 @@ import {
       <>
         <div className="space-y-10 m-10 ">
           <div className="flex gap-4 flex-wrap">
-          <div className="flex flex-wrap"><CommunicationCard /></div>
+         <CommunicationCard />
 
           </div>
           <h2 className="text-left font-bold py-4">Doctors</h2>

@@ -29,7 +29,7 @@ export default function Page() {
 
       <AppSidebar  className="fixed top-[100px]  left-0 h-[calc(100vh-100px)  border-t-2  transition-all duration-300" />
 
-      <SidebarInset className="mt-[100px] shadow-md     border-r-2  mr-20 bg-background text-foreground">
+      <SidebarInset className="mt-[100px] shadow-md border-t-0 border-r-2  mr-20 bg-background text-foreground">
         <main>
           <Outlet />
         </main>
