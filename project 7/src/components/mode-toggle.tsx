@@ -14,7 +14,7 @@ export function ModeToggle() {
       onClick={toggleTheme}
       variant="outline"
       size="icon"
-      className="relative flex items-center justify-center"
+      className="relative flex items-center justify-center dark:hover:bg-gray-600"
     >
       {theme === "dark" ? (
         <Sun className="h-[1.2rem] w-[1.2rem] transition-all" />

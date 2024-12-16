@@ -48,80 +48,43 @@ export default function DropdownDemo() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="max-w-64">
         <DropdownMenuLabel className="flex min-w-0 flex-col">
-          <span className="truncate text-sm font-medium text-foreground">
-            Keith Kennedy
-          </span>
-          <span className="truncate text-xs font-normal text-muted-foreground">
+          <span className="truncate text-sm font-medium text-foreground">Keith Kennedy</span>
+          <span className="truncate text-xs font-normal text-muted-foreground dark:hover:bg-gray-600">
             k.kennedy@originui.com
           </span>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuItem>
-            <Bolt
-              size={16}
-              strokeWidth={2}
-              className="opacity-60"
-              aria-hidden="true"
-            />
+          <DropdownMenuItem className="dark:hover:bg-gray-600">
+            <Bolt size={16} strokeWidth={2} className="opacity-60" aria-hidden="true" />
             <span>Option 1</span>
           </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Layers2
-              size={16}
-              strokeWidth={2}
-              className="opacity-60"
-              aria-hidden="true"
-            />
+          <DropdownMenuItem className="dark:hover:bg-gray-600">
+            <Layers2 size={16} strokeWidth={2} className="opacity-60" aria-hidden="true" />
             <span>Option 2</span>
           </DropdownMenuItem>
-          <DropdownMenuItem>
-            <BookOpen
-              size={16}
-              strokeWidth={2}
-              className="opacity-60"
-              aria-hidden="true"
-            />
+          <DropdownMenuItem className="dark:hover:bg-gray-600">
+            <BookOpen size={16} strokeWidth={2} className="opacity-60" aria-hidden="true" />
             <span>Option 3</span>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuItem>
-            <Pin
-              size={16}
-              strokeWidth={2}
-              className="opacity-60"
-              aria-hidden="true"
-            />
+          <DropdownMenuItem className="dark:hover:bg-gray-600">
+            <Pin size={16} strokeWidth={2} className="opacity-60" aria-hidden="true" />
             <span>Option 4</span>
           </DropdownMenuItem>
-          <DropdownMenuItem>
-            <UserPen
-              size={16}
-              strokeWidth={2}
-              className="opacity-60"
-              aria-hidden="true"
-            />
+          <DropdownMenuItem className="dark:hover:bg-gray-600">
+            <UserPen size={16} strokeWidth={2} className="opacity-60" aria-hidden="true" />
             <span>Option 5</span>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <LogOut
-            size={16}
-            strokeWidth={2}
-            className="opacity-60"
-            aria-hidden="true"
-            onClick={handleLogout}
-          />
-          <span
-            onClick={handleLogout}
-            className="cursor-pointer text-blue-500 hover:underline"
-          >
-            Logout
-          </span>{" "}
-        </DropdownMenuItem>
+        <DropdownMenuItem className="dark:hover:bg-gray-600" >
+          <LogOut size={16} strokeWidth={2} className="opacity-60" aria-hidden="true" />
+          <span onClick={handleLogout} className="cursor-pointer text-blue-500 hover:underline">
+      Logout
+    </span>        </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           <span>

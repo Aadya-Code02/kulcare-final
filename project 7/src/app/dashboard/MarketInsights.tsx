@@ -34,6 +34,7 @@ import {
   } from "@/components/ui/table";
 
 export default function MarketInsights() {
+      // Dropdown menu items for different categories (months, regions, products, etc.)
   const dropdownItems = [
     {
       title: "Jan",
@@ -151,7 +152,7 @@ export default function MarketInsights() {
       title: "Sharma Ji",
     },
   ];
-
+  // Chart data representing visitors and browser types
   const chartData = [
     { browser: "chrome", visitors: 275, fill: "var(--color-chrome)" },
     { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
@@ -184,7 +185,7 @@ export default function MarketInsights() {
       color: "hsl(var(--chart-5))",
     },
   } satisfies ChartConfig;
-
+  // Invoices data for display in a table
   const invoices = [
     {
       invoice: "kid",
@@ -237,7 +238,7 @@ export default function MarketInsights() {
       Engagement: "90",
     },
   ];
-
+  // Managing state for selected dropdown items
   const [selectedItem, setSelectedItem] = useState(dropdownItems[0]);
   const [selectedItem2, setSelectedItem2] = useState(dropdownItems2[0]);
   const [selectedItem3, setSelectedItem3] = useState(dropdownItems3[0]);
@@ -248,12 +249,12 @@ export default function MarketInsights() {
   <h2 className="text-left font-bold w-full">MARKET INSIGHTS</h2>
 
   {/* Dropdown Menu Section */}
-  <div className="flex flex-wrap gap-4 w-full">
+  <div className="flex flex-wrap gap-4 w-full ">
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          className="w-[142px] h-[43px] flex items-center justify-between"
+          className="w-[142px] h-[43px] flex items-center justify-between dark:hover:bg-gray-600"
         >
           {selectedItem.icon}
           <span className="ms-2">{selectedItem.title}</span>
@@ -270,7 +271,7 @@ export default function MarketInsights() {
           <DropdownMenuItem
             key={item.title}
             onClick={() => setSelectedItem(item)}
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 dark:hover:bg-gray-600"
           >
             {item.icon}
             {item.title}
@@ -283,7 +284,7 @@ export default function MarketInsights() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          className="w-[142px] h-[43px] flex items-center justify-between"
+          className="w-[142px] h-[43px] flex items-center justify-between dark:hover:bg-gray-600"
         >
           {selectedItem2.icon}
           <span className="ms-2">{selectedItem2.title}</span>
@@ -300,6 +301,8 @@ export default function MarketInsights() {
           <DropdownMenuItem
             key={item.title}
             onClick={() => setSelectedItem2(item)}
+            className="flex items-center space-x-2 dark:hover:bg-gray-600"
+
           >
             {item.icon}
             {item.title}
@@ -312,7 +315,7 @@ export default function MarketInsights() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          className="w-[142px] h-[43px] flex items-center justify-between"
+          className="w-[142px] h-[43px] flex items-center justify-between dark:hover:bg-gray-600"
         >
           {selectedItem3.icon}
           <span className="ms-2">{selectedItem3.title}</span>
@@ -329,7 +332,7 @@ export default function MarketInsights() {
           <DropdownMenuItem
             key={item.title}
             onClick={() => setSelectedItem3(item)}
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 dark:hover:bg-gray-600"
           >
             {item.icon}
             {item.title}
@@ -342,7 +345,7 @@ export default function MarketInsights() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          className="w-[142px] h-[43px] flex items-center justify-between"
+          className="w-[142px] h-[43px] flex items-center justify-between dark:hover:bg-gray-600"
         >
           {selectedItem4.icon}
           <span className="ms-2">{selectedItem4.title}</span>
@@ -359,6 +362,7 @@ export default function MarketInsights() {
           <DropdownMenuItem
             key={item.title}
             onClick={() => setSelectedItem4(item)}
+            className="flex items-center space-x-2 dark:hover:bg-gray-600"
           >
             {item.icon}
             {item.title}

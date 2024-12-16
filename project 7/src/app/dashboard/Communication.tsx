@@ -177,7 +177,7 @@ export default function Communications() {
             <DropdownMenuTrigger asChild>
               <Button
                 variant="outline"
-                className="w-[142px] h-[43px] flex items-center justify-between"
+                className="w-[142px] h-[43px] flex items-center justify-between dark:hover:bg-gray-600"
               >
                 {selectedItem.icon}
                 <span className="ms-2">{selectedItem.title}</span>
@@ -194,7 +194,7 @@ export default function Communications() {
                 <DropdownMenuItem
                   key={item.title}
                   onClick={() => setSelectedItem(item)}
-                  className="flex items-center space-x-2"
+                  className="flex items-center space-x-2  dark:hover:bg-gray-600"
                 >
                   {item.icon}
                   {item.title}
@@ -207,7 +207,7 @@ export default function Communications() {
             <DropdownMenuTrigger asChild>
               <Button
                 variant="outline"
-                className="w-[142px] h-[43px] flex items-center justify-between"
+                className="w-[142px] h-[43px] flex items-center justify-between  dark:hover:bg-gray-600"
               >
                 {selectedItem2.icon}
                 <span className="ms-2">{selectedItem2.title}</span>
@@ -224,6 +224,8 @@ export default function Communications() {
                 <DropdownMenuItem
                   key={item.title}
                   onClick={() => setSelectedItem2(item)}
+                  className="flex items-center space-x-2  dark:hover:bg-gray-600"
+
                 >
                   {item.icon}
                   {item.title}
