@@ -19,7 +19,7 @@ import {
   Pin,
   UserPen,
 } from "lucide-react";
-import { ModeToggle } from "../components/mode-toggle";
+import { ModeToggle } from "./mode-toggle";
 import { useNavigate } from "react-router-dom";
 
 export default function DropdownDemo() {

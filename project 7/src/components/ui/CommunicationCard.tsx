@@ -28,7 +28,7 @@ export default function CommunicationCard() {
       label: "Visitors",
     },
     chrome: {
-      label: "Chrome",
+      label: "Opera",
       color: "hsl(var(--chart-1))",
     },
     safari: {
