@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import Page from "../app/dashboard/Page";
-import HomePage from "../app/dashboard/Home";
+import HomePage from "../app/dashboard/Dashboard";
 import Communications from "@/app/dashboard/Communication";
-import Error404 from "@/app/dashboard/Errorpages/error1";
-import LoginPage from "@/app/dashboard/pages/Login";
+import Error404 from "@/app/pages/Errorpages/error1";
+import LoginPage from "@/app/pages/Login";
 import MarketInsights from "@/app/dashboard/MarketInsights";
-import Error2 from "@/app/dashboard/Errorpages/error2";
+import Error2 from "@/app/pages/Errorpages/error2";
 
 const AppRoutes = () => {
   return (
